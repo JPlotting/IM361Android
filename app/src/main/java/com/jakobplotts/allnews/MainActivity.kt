@@ -1,6 +1,8 @@
 package com.jakobplotts.allnews
 
 import android.os.Bundle
+import android.widget.Button
+import android.widget.TextView
 import android.support.design.widget.Snackbar
 import android.support.v7.app.AppCompatActivity;
 import android.view.Menu
@@ -8,11 +10,19 @@ import android.view.MenuItem
 
 import kotlinx.android.synthetic.main.activity_main.*
 
+
 class MainActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+
+        val myText: TextView = findViewById(R.id.my_text_view)
+        val myButton: Button = findViewById(R.id.my_button)
+        myButton.setOnClickListener {
+            myText.setText(R.string.textView_text)
+        }
+
         setSupportActionBar(toolbar)
 
         fab.setOnClickListener { view ->
