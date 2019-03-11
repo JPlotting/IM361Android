@@ -12,6 +12,7 @@ import kotlinx.android.synthetic.main.activity_main.*
 
 
 class MainActivity : AppCompatActivity() {
+    var counter = 0
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -20,7 +21,8 @@ class MainActivity : AppCompatActivity() {
         val myText: TextView = findViewById(R.id.my_text_view)
         val myButton: Button = findViewById(R.id.my_button)
         myButton.setOnClickListener {
-            myText.setText(R.string.textView_text)
+            counter++
+            myText.text = resources.getQuantityString(R.plurals.textView_text,counter,counter)
         }
 
         setSupportActionBar(toolbar)

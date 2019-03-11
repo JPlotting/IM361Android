@@ -6,5 +6,8 @@
     <string name="app_name">All News</string>
     <string name="action_settings">Settings</string>
     <string name="button">Button</string>
-    <string name="textView_text">I\'ve been clicked!</string>
+    <plurals name="textView_text">
+        <item quantity="one">I\'ve been clicked %d time!</item>
+        <item quantity="other">I\'ve been clicked %d times!</item>
+    </plurals>
 </resources>
