@@ -7,7 +7,7 @@
     <string name="action_settings">Settings</string>
     <string name="button">Button</string>
     <plurals name="textView_text">
-        <item quantity="one">I\'ve been clicked %d time!</item>
-        <item quantity="other">I\'ve been clicked %d times!</item>
+        <item quantity="one">The button has been tapped! (%d time)</item>
+        <item quantity="other">You\'re a natural! You\'ve tapped it %d times!</item>
     </plurals>
 </resources>
