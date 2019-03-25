@@ -5,13 +5,21 @@ import android.widget.Button
 import android.widget.TextView
 import android.support.design.widget.Snackbar
 import android.support.v7.app.AppCompatActivity;
+import android.util.Log
 import android.view.Menu
 import android.view.MenuItem
+import com.google.android.gms.maps.GoogleMap
+import com.google.android.gms.maps.OnMapReadyCallback
+import com.google.android.gms.maps.SupportMapFragment
 
 import kotlinx.android.synthetic.main.activity_main.*
 
 
-class MainActivity : AppCompatActivity() {
+class MainActivity : AppCompatActivity(), OnMapReadyCallback {
+    override fun onMapReady(map: GoogleMap?) {
+        Log.i("All News","stuffs")
+    }
+
     var counter = 0
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -24,6 +32,9 @@ class MainActivity : AppCompatActivity() {
             counter++
             myText.text = resources.getQuantityString(R.plurals.textView_text,counter,counter)
         }
+
+        val mapFragment = supportFragmentManager.findFragmentById(R.id.my_map_view) as SupportMapFragment
+        mapFragment.getMapAsync(this)
 
         setSupportActionBar(toolbar)
 

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.design.widget.CoordinatorLayout
+<android.support.constraint.ConstraintLayout
         xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:app="http://schemas.android.com/apk/res-auto"
         xmlns:tools="http://schemas.android.com/tools"
@@ -21,7 +21,7 @@
 
     </android.support.design.widget.AppBarLayout>
 
-    <include layout="@layout/content_main"/>
+    <include layout="@layout/content_main" android:id="@+id/include"/>
 
     <android.support.design.widget.FloatingActionButton
             android:id="@+id/fab"
@@ -30,6 +30,10 @@
             android:layout_gravity="bottom|end"
             android:layout_margin="@dimen/fab_margin"
             app:srcCompat="@android:drawable/ic_dialog_email" app:backgroundTint="@color/colorFabBackground"
-            android:tint="@color/colorButtonNormal" app:fabSize="auto"/>
+            android:tint="@color/colorButtonNormal" app:fabSize="auto" tools:layout_editor_absoluteY="659dp"
+            tools:layout_editor_absoluteX="339dp"/>
 
-</android.support.design.widget.CoordinatorLayout>
+    <fragment class="com.google.android.gms.maps.SupportMapFragment" android:id="@+id/my_map_view"
+              android:layout_width="wrap_content" android:layout_height="wrap_content"
+              tools:layout_editor_absoluteY="479dp" tools:layout_editor_absoluteX="169dp"/>
+</android.support.constraint.ConstraintLayout>
