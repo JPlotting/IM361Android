@@ -19,6 +19,9 @@ android {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
+        all {
+            resValue 'string', "maps_api_key", all_news_maps_api_key
+        }
     }
 }
 
