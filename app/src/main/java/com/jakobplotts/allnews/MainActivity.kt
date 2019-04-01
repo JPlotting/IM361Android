@@ -1,6 +1,10 @@
 package com.jakobplotts.allnews
 
+import android.app.ActivityOptions
+import android.content.Intent
 import android.os.Bundle
+import android.support.animation.DynamicAnimation
+import android.support.animation.SpringAnimation
 import android.widget.Button
 import android.widget.TextView
 import android.support.design.widget.Snackbar
@@ -33,9 +37,20 @@ class MainActivity : AppCompatActivity(), OnMapReadyCallback {
 
         val myText: TextView = findViewById(R.id.my_text_view)
         val myButton: Button = findViewById(R.id.my_button)
+        val myButtonViewTheirContent: Button = findViewById(R.id.button_view_their_content)
+        val anim = SpringAnimation(myText,DynamicAnimation.TRANSLATION_Y,-48f)
+        anim.setStartValue(0f)
+
         myButton.setOnClickListener {
             counter++
             myText.text = resources.getQuantityString(R.plurals.textView_text,counter,counter)
+            anim.start()
+        }
+
+        myButtonViewTheirContent.setOnClickListener {
+            val intent = Intent(this,GalleryActivity::class.java)
+            val options = ActivityOptions.makeSceneTransitionAnimation(this,myText,"image_gallery_example")
+            startActivity(intent,options.toBundle())
         }
 
         val mapFragment = supportFragmentManager.findFragmentById(R.id.my_map_view) as SupportMapFragment

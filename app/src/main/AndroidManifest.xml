@@ -19,6 +19,9 @@
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
+        <activity android:name=".GalleryActivity"
+                  android:parentActivityName=".MainActivity"
+            />
 
         <meta-data
                 android:name="com.google.android.geo.API_KEY"
