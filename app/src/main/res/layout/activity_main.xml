@@ -2,69 +2,129 @@
 <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
                                              xmlns:app="http://schemas.android.com/apk/res-auto"
                                              xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
-                                             android:layout_height="match_parent">
+                                             android:layout_height="match_parent" android:background="@color/colorFabBackground">
 
     <ImageView
-            tools:srcCompat="@drawable/ic_launcher_background"
-            android:id="@+id/imageView"
-            android:layout_width="0dp" android:layout_height="150dp"
-            android:scaleType="centerCrop"
-            app:layout_constraintStart_toStartOf="parent" app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintVertical_bias="0.0" app:srcCompat="@drawable/ic_launcher_background"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintTop_toBottomOf="@+id/toolbar"/>
-    <ImageView
-            android:layout_height="200dp" tools:srcCompat="@drawable/common_google_signin_btn_icon_light"
-            android:id="@+id/imageView2" app:layout_constraintEnd_toEndOf="parent"
-            android:layout_marginEnd="8dp" app:layout_constraintStart_toStartOf="parent"
-            android:layout_marginBottom="8dp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            android:layout_marginTop="32dp" app:layout_constraintTop_toTopOf="@+id/imageView"
-            app:layout_constraintVertical_bias="0.0" android:layout_width="200dp" android:elevation="2dp"
-            app:srcCompat="@drawable/common_google_signin_btn_icon_light"/>
-    <TextView
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/greetings_tap_the_button_to_begin"
-            app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintRight_toRightOf="parent"
-            android:id="@+id/my_text_view"
-            android:layout_marginTop="48dp" app:layout_constraintTop_toBottomOf="@+id/imageView2"
-            app:layout_constraintBottom_toTopOf="@+id/my_map_view"
-    />
-    <fragment class="com.google.android.gms.maps.SupportMapFragment" android:id="@+id/my_map_view"
-              android:layout_width="0dp" android:layout_height="125dp"
-              app:layout_constraintTop_toBottomOf="@+id/my_text_view"
-              app:layout_constraintBottom_toTopOf="@+id/my_button"
-              app:layout_constraintStart_toStartOf="parent"
-              app:layout_constraintEnd_toEndOf="parent"
-              android:layout_marginBottom="16dp" android:layout_marginTop="32dp"/>
-    <Button
-            android:text="@string/button"
-            android:layout_width="89dp"
-            android:layout_height="wrap_content"
-            android:id="@+id/my_button"
-            android:background="@color/colorButtonNormal"
-            android:textColor="@color/colorBackground"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent" android:layout_marginTop="16dp"
-            app:layout_constraintTop_toBottomOf="@+id/my_map_view"/>
+            android:layout_height="wrap_content" app:srcCompat="@drawable/image_article_back"
+            android:id="@+id/ImageArticleBack" app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent" app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent" android:scaleType="centerCrop"/>
+    <ScrollView
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toTopOf="@+id/ButtonViewMore"
+            app:layout_constraintTop_toBottomOf="@+id/ToolbarArticle" android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp">
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                      android:orientation="vertical">
+            <ImageView
+                    android:id="@+id/ImageArticleBanner"
+                    android:layout_width="match_parent" android:layout_height="200dp"
+                    android:scaleType="centerCrop"
+                    app:layout_constraintStart_toStartOf="parent" app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintVertical_bias="0.0" app:srcCompat="@drawable/image_gallery_thumb1"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintTop_toBottomOf="@+id/toolbar"/>
+            <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp" app:srcCompat="@color/colorButtonNormal"
+                    android:id="@+id/ImageColoredDiv"/>
+            <TextView
+                    android:text="@string/n3_graphic_design_tips_for_non_designers"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" android:id="@+id/TextArticleTitle" android:textSize="30sp"
+                    android:textStyle="bold" android:textAlignment="textStart"/>
+            <TextView
+                    android:text="@string/by_midori_nediger"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" android:id="@+id/TextArticleAuthor" android:textSize="18sp"
+                    android:textAlignment="textStart" android:textColor="@color/colorButtonNormal"/>
+            <TextView
+                    android:text="@string/published_october_12_2018"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" android:id="@+id/TextArticleDate" android:textSize="14sp"
+                    android:textStyle="italic" android:textAlignment="textStart"
+                    android:textColor="@color/colorAccent"/>
+            <TextView
+                    android:text="@string/ngiven_the_power_of_visual_content_it_s_more_memorable_and_more_engaging_than_text_based_content_many_marketers_have_turned_to_diy_graphic_design_software_or_contracted_with_graphic_artists_with_more_traditionally_text_focused_people_entering_the_world_of_visuals_it_s_time_for_a_brief_refresher_on_the_essential_principles_of_design_it_s_time_for_a_reminder_that_the_strategic_use_of_typography_color_and_white_space_can_drastically_improve_the_efficacy_and_aesthetics_of_visual_content_these_three_design_tips_will_keep_your_blog_social_media_and_other_visuals_on_the_right_track"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" android:id="@+id/TextArticleBody1"
+                    android:textAlignment="textStart"
+                    android:textSize="18sp"/>
+            <TextView
+                    android:text="@string/nwhite_space_101_remove_to_improve"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" android:id="@+id/TextArticleSubTitle" android:textSize="24sp"
+                    android:textStyle="bold" android:textAlignment="center"/>
+            <TextView
+                    android:text="@string/na_telltale_sign_of_an_amateur_designer_is_a_shortage_or_misuse_of_white_space_if_you_re_unfamiliar_with_the_term_white_or_negative_space_refers_to_the_unmarked_spaces_around_or_between_visual_elements_in_a_design_n"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" android:id="@+id/TextArticleBody2" android:textSize="18sp"
+                    android:textAlignment="textStart"/>
+            <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="300dp" app:srcCompat="@drawable/image_article_example"
+                    android:id="@+id/ImageArticleExample" android:scaleType="centerInside"/>
+            <TextView
+                    android:text="@string/an_example_of_the_use_of_negative_space_to_enhance_focus"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" android:id="@+id/TextArticleCaption" android:textSize="14sp"
+                    android:textStyle="italic" android:textAlignment="center"
+                    android:textColor="@color/colorAccent"/>
+            <TextView
+                    android:text="@string/napple_s_use_of_white_space_for_its_homepod_page_is_extreme_but_effective_the_stark_emptiness_of_the_designs_force_viewers_to_focus_on_the_product_which_is_often_a_work_of_art_in_contrast_non_designers_often_itch_to_fill_every_inch_of_space_with_text_images_or_other_design_elements_leaving_no_place_for_the_eye_to_rest_n"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" android:id="@+id/TextArticleBody3"
+                    android:textAlignment="textStart"
+                    android:textSize="18sp"/>
+            <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="300dp" app:srcCompat="@drawable/image_article_author"
+                    android:id="@+id/ImageArticleAuthor" android:scaleType="centerInside"/>
+            <TextView
+                    android:text="@string/nshare_this_content_n"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" android:id="@+id/TextArticleShare" android:textSize="24sp"
+                    android:textAlignment="textStart" android:textColor="@color/colorAccent"/>
+            <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="600dp" app:srcCompat="@drawable/image_article_comments"
+                    android:id="@+id/ImageArticleComments" android:scaleType="centerInside"/>
+            <Button
+                    android:text="@string/load_more_comments"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" android:id="@+id/ButtonLoadMore"
+                    android:textAlignment="center" android:textColor="@color/colorFabBackground"/>
+        </LinearLayout>
+    </ScrollView>
     <Button
             android:text="@string/button_view_their_content"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:id="@+id/button_view_their_content"
-            android:background="@color/colorButtonNormal"
-            android:textColor="@color/colorBackground"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintBottom_toBottomOf="parent"/>
-    <android.support.v7.widget.Toolbar
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="?attr/colorPrimary"
-            android:theme="?attr/actionBarTheme"
-            android:minHeight="?attr/actionBarSize" android:id="@+id/toolbar"
+            android:id="@+id/ButtonViewMore"
+            android:background="@color/colorPrimary"
+            android:textColor="@color/colorFabBackground"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent" android:textStyle="bold" android:textAlignment="center"/>
+    <android.support.design.widget.FloatingActionButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true" app:srcCompat="@android:drawable/btn_star" android:id="@+id/FloatingFavButton"
+            android:layout_marginBottom="64dp" app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginEnd="8dp" app:layout_constraintEnd_toEndOf="@+id/ButtonViewMore"
+            app:backgroundTint="@color/colorFabBackground" android:tint="@color/colorButtonInactive"
+            app:elevation="4dp"/>
+    <android.support.v7.widget.Toolbar
+            android:id="@+id/ToolbarArticle"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/colorFabBackground"
+            android:elevation="4dp"
+            android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
             app:layout_constraintTop_toTopOf="parent"/>
 </android.support.constraint.ConstraintLayout>

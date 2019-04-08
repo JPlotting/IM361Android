@@ -7,7 +7,35 @@
     <string name="action_settings">Settings</string>
     <string name="button">Button</string>
     <string name="greetings_tap_the_button_to_begin">Greetings! Tap the button to begin</string>
-    <string name="button_view_their_content">VIEW THEIR CONTENT</string>
+    <string name="button_view_their_content">VIEW MORE CONTENT</string>
+    <string name="_3_graphic_design_tips_for_non_designers">3 Graphic Design Tips for Non-Designers</string>
+    <string name="n3_graphic_design_tips_for_non_designers">\n3 Graphic Design Tips for Non-Designers</string>
+    <string name="by_midori_nediger">By Midori Nediger</string>
+    <string name="by_midori_nediger_n">By Midori Nediger\n</string>
+    <string name="published_october_12_2018">Published October 12, 2018\n</string>
+    <string name="ngiven_the_power_of_visual_content_it_s_more_memorable_and_more_engaging_than_text_based_content_many_marketers_have_turned_to_diy_graphic_design_software_or_contracted_with_graphic_artists_with_more_traditionally_text_focused_people_entering_the_world_of_visuals_it_s_time_for_a_brief_refresher_on_the_essential_principles_of_design_it_s_time_for_a_reminder_that_the_strategic_use_of_typography_color_and_white_space_can_drastically_improve_the_efficacy_and_aesthetics_of_visual_content_these_three_design_tips_will_keep_your_blog_social_media_and_other_visuals_on_the_right_track">
+        Given the power of visual content (it’s more memorable and more engaging than text-based content), many
+        marketers have turned to DIY graphic design software or contracted with graphic artists. With more traditionally
+        text-focused people entering the world of visuals, it’s time for a brief refresher on the essential principles
+        of design. It’s time for a reminder that the strategic use of typography, color, and white space can drastically
+        improve the efficacy and aesthetics of visual content. These three design tips will keep your blog, social
+        media, and other visuals on the right track.
+    </string>
+    <string name="nwhite_space_101_remove_to_improve">\nWhite space 101: Remove to Improve</string>
+    <string name="na_telltale_sign_of_an_amateur_designer_is_a_shortage_or_misuse_of_white_space_if_you_re_unfamiliar_with_the_term_white_or_negative_space_refers_to_the_unmarked_spaces_around_or_between_visual_elements_in_a_design_n">
+        A telltale sign of an amateur designer is a shortage (or misuse) of white space. If you’re unfamiliar with the
+        term, white or negative space refers to the unmarked spaces around or between visual elements in a design.
+    </string>
+    <string name="an_example_of_the_use_of_negative_space_to_enhance_focus">An example of the use of negative space to
+        enhance focus\n
+    </string>
+    <string name="napple_s_use_of_white_space_for_its_homepod_page_is_extreme_but_effective_the_stark_emptiness_of_the_designs_force_viewers_to_focus_on_the_product_which_is_often_a_work_of_art_in_contrast_non_designers_often_itch_to_fill_every_inch_of_space_with_text_images_or_other_design_elements_leaving_no_place_for_the_eye_to_rest_n">
+        Apple’s use of white space for its HomePod page is extreme, but effective. The stark emptiness of the designs
+        force viewers to focus on the product, which is often a work of art. In contrast, non-designers often itch to
+        fill every inch of space with text, images, or other design elements, leaving no place for the eye to rest.
+    </string>
+    <string name="nshare_this_content_n">Share This Content\n</string>
+    <string name="load_more_comments">LOAD MORE COMMENTS</string>
     <plurals name="textView_text">
         <item quantity="one">The button has been tapped! (%d time)</item>
         <item quantity="other">You\'re a natural! You\'ve tapped it %d times!</item>

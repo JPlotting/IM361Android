@@ -3,13 +3,124 @@
                                              xmlns:app="http://schemas.android.com/apk/res-auto"
                                              xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
                                              android:layout_height="match_parent">
-    <ImageView
-            tools:srcCompat="@tools:sample/backgrounds/scenic[13]"
-            android:id="@+id/image_gallery_example"
-            android:layout_width="0dp" android:layout_height="0dp"
-            android:scaleType="centerCrop"
-            android:transitionName="image_gallery_example"
+    <ScrollView
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintBottom_toBottomOf="parent" app:srcCompat="@drawable/ic_launcher_background"/>
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintVertical_bias="1.0">
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                      android:orientation="vertical" android:gravity="bottom">
+            <ImageView
+                    android:id="@+id/ImageGalleryThumb1"
+                    android:layout_width="wrap_content"
+                    android:scaleType="centerCrop"
+                    android:transitionName="image_gallery_example"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent" app:srcCompat="@drawable/image_gallery_thumb1"
+                    android:layout_height="400dp"/>
+            <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp" app:srcCompat="@color/colorButtonNormal"
+                    android:id="@+id/imageColoredDiv1"/>
+            <TextView
+                    android:text="@string/_3_graphic_design_tips_for_non_designers"
+                    android:layout_width="match_parent"
+                    android:id="@+id/TextGalleryTitle1"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent" android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:textAlignment="viewStart"
+                    android:textColor="@color/colorFabBackground"
+                    android:textSize="30sp" android:layout_marginStart="16dp" android:layout_marginEnd="16dp"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    android:layout_marginTop="16dp"
+                    app:layout_constraintTop_toTopOf="@+id/ImageGalleryThumb1"/>
+            <TextView
+                    android:text="@string/by_midori_nediger_n"
+                    android:layout_width="match_parent"
+                    android:id="@+id/TextGalleryAuthor1"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent" android:layout_height="wrap_content"
+                    android:textAlignment="viewStart"
+                    android:textColor="@color/colorFabBackground"
+                    android:textSize="18sp" android:layout_marginStart="16dp" android:layout_marginEnd="16dp"
+                    android:layout_marginTop="8dp" app:layout_constraintTop_toBottomOf="@+id/TextGalleryTitle1"/>
+            <ImageView
+                    android:id="@+id/ImageGalleryThumb2"
+                    android:layout_width="match_parent"
+                    android:scaleType="centerCrop"
+                    android:transitionName="image_gallery_example"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent" app:srcCompat="@drawable/image_gallery_thumb2"
+                    android:layout_height="400dp"/>
+            <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp" app:srcCompat="@color/colorTertiary1"
+                    android:id="@+id/imageColoredDiv2"/>
+            <TextView
+                    android:text="@string/_3_graphic_design_tips_for_non_designers"
+                    android:layout_width="match_parent"
+                    android:id="@+id/TextGalleryTitle2"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent" android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:textAlignment="viewStart"
+                    android:textColor="@color/colorFabBackground"
+                    android:textSize="30sp" android:layout_marginStart="16dp" android:layout_marginEnd="16dp"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    android:layout_marginTop="16dp"
+                    app:layout_constraintTop_toTopOf="@+id/ImageGalleryThumb1"/>
+            <TextView
+                    android:text="@string/by_midori_nediger_n"
+                    android:layout_width="match_parent"
+                    android:id="@+id/TextGalleryAuthor2"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent" android:layout_height="wrap_content"
+                    android:textAlignment="viewStart"
+                    android:textColor="@color/colorFabBackground"
+                    android:textSize="18sp" android:layout_marginStart="16dp" android:layout_marginEnd="16dp"
+                    android:layout_marginTop="8dp" app:layout_constraintTop_toBottomOf="@+id/TextGalleryTitle1"/>
+            <ImageView
+                    android:id="@+id/ImageGalleryThumb3"
+                    android:layout_width="match_parent"
+                    android:scaleType="centerCrop"
+                    android:transitionName="image_gallery_example"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent" app:srcCompat="@drawable/image_gallery_thumb3"
+                    android:layout_height="400dp"/>
+            <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp" app:srcCompat="@color/colorTertiary2"
+                    android:id="@+id/imageColoredDiv3"/>
+            <TextView
+                    android:text="@string/_3_graphic_design_tips_for_non_designers"
+                    android:layout_width="match_parent"
+                    android:id="@+id/TextGalleryTitle3"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent" android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:textAlignment="viewStart"
+                    android:textColor="@color/colorFabBackground"
+                    android:textSize="30sp" android:layout_marginStart="16dp" android:layout_marginEnd="16dp"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    android:layout_marginTop="16dp"
+                    app:layout_constraintTop_toTopOf="@+id/ImageGalleryThumb1"/>
+            <TextView
+                    android:text="@string/by_midori_nediger_n"
+                    android:layout_width="match_parent"
+                    android:id="@+id/TextGalleryAuthor3"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent" android:layout_height="wrap_content"
+                    android:textAlignment="viewStart"
+                    android:textColor="@color/colorFabBackground"
+                    android:textSize="18sp" android:layout_marginStart="16dp" android:layout_marginEnd="16dp"
+                    android:layout_marginTop="8dp" app:layout_constraintTop_toBottomOf="@+id/TextGalleryTitle1"/>
+        </LinearLayout>
+    </ScrollView>
 </android.support.constraint.ConstraintLayout>
